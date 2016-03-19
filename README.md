@@ -1,5 +1,5 @@
 # Emotional Corgum
-A gathering of corgi emotions
+A gathering of corgi feelings
 
 ## Tech Used
 
