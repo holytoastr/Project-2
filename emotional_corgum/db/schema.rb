@@ -11,10 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160320011755) do
+ActiveRecord::Schema.define(version: 20160320205859) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "corgis", force: :cascade do |t|
+    t.string   "img_url"
+    t.string   "quote"
+    t.integer  "emotion_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "emotions", force: :cascade do |t|
     t.string   "emotion_name"

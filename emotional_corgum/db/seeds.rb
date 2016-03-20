@@ -9,3 +9,12 @@
 happy = Emotion.create(emotion_name: 'Happy')
 sad = Emotion.create(emotion_name: 'Sad')
 angry = Emotion.create(emotion_name: 'Angry')
+
+happycorgi1 = Corgi.create(img_url: "http://i.imgur.com/tdavu17.gifv", quote: "Walk tall!", emotion: happy)
+happycorgi2 = Corgi.create(img_url: "http://i.imgur.com/18f7bdG.gifv", quote: "Be ready for anything!", emotion: happy)
+
+sadcorgi1 = Corgi.create(img_url: "http://i.imgur.com/wKjdA9G.jpg", quote: "I was meant for so much more than this.", emotion: sad)
+sadcorgi2 = Corgi.create(img_url: "http://i.imgur.com/tpVL1.jpg", quote: "I thought you loved me", emotion: sad)
+
+angrycorgi1 = Corgi.create(img_url: "http://i.imgur.com/JEAmgJX.jpg", quote: "This is NOT the park", emotion: angry)
+angrycorgi2 = Corgi.create(img_url: "http://i.imgur.com/RAFH7bf.gif", quote: "Cabbages!!!", emotion: angry)
