@@ -23,6 +23,12 @@ header {
   padding-bottom: 40px;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  font-size: 15px;
+}
+
 .container {
   display: flex;
   width: 100%
@@ -31,9 +37,6 @@ header {
 .contents {
   order: 2;
   flex: 5;
-
-
-  outline: 1px solid red;
 }
 
 .logo {
@@ -43,8 +46,7 @@ header {
 .sidebar {
   order: 1;
   flex: 1;
-
-  outline: 1px solid black;
+  margin-left: 10px;
 }
 
 .tagline {
