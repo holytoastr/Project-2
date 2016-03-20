@@ -39,6 +39,12 @@ footer {
   flex: 5;
 }
 
+.emotion {
+  font-family: 'Love Ya Like A Sister', cursive;
+  font-size: 50px;
+  text-align: center;
+}
+
 .logo {
   font-size: 80px;
 }
