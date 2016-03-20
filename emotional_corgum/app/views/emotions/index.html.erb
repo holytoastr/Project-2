@@ -1,1 +1,8 @@
-This is where stuff will go
+<h2>Choose your corgum:</h2>
+<div>
+  <% @emotions.each do |emotion| %>
+  <div>
+    <%= link_to emotion.emotion_name, emotion_path(emotion) %> (# of corgis)
+  </div>
+  <% end %>
+</div>
