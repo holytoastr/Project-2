@@ -2,6 +2,7 @@
 A gathering of corgi feelings
 
 ## Tech Used
+This is a ruby on rails app with a postgres database.
 
 ## Approach Taken
 
