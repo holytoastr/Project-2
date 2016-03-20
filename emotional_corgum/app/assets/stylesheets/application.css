@@ -13,3 +13,41 @@
  *= require_tree .
  *= require_self
  */
+body {
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 20px;
+}
+
+header {
+  font-family: 'Love Ya Like A Sister', cursive;
+  padding-bottom: 40px;
+}
+
+.container {
+  display: flex;
+  width: 100%
+}
+
+.contents {
+  order: 2;
+  flex: 5;
+
+
+  outline: 1px solid red;
+}
+
+.logo {
+  font-size: 80px;
+}
+
+.sidebar {
+  order: 1;
+  flex: 1;
+
+  outline: 1px solid black;
+}
+
+.tagline {
+  font-size: 25px;
+  margin-left: 25px;
+}

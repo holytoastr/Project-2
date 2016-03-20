@@ -3,12 +3,28 @@
 <head>
   <title>EmotionalCorgum</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag "https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" %>
+  <%= stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Bubblegum+Sans' %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <header>
+    <div class='logo'>Emotional Corgum</div>
+    <div class='tagline'>  A gathering of corgi emotions</div>
+  </header>
+  <div class='container'>
+    <div class='contents'>
+      <%= yield %>
 
-<%= yield %>
+    </div>
+
+    <div class='sidebar'>
+      <%= link_to 'Home', emotions_path %>
+
+    </div>
+
+  </div>
 
 </body>
 </html>
