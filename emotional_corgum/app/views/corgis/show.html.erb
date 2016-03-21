@@ -1,11 +1,12 @@
 <div class='corgi'>
   <div class='picture'>
-    <%= image_tag @corgi.img_url, alt: "A corgi" %>
+    <%= image_tag @corgi.img_url, alt: "Corgi wisdom: #{@corgi.quote}" %>
   </div>
   <div class='quote'>
     <%= @corgi.quote %>
   </div>
   <div class='comments'>
     This is where all the comments will go
+    (Add a new comment)
   </div>
 </div>

@@ -11,6 +11,8 @@ sad = Emotion.create(emotion_name: 'Sad')
 angry = Emotion.create(emotion_name: 'Angry')
 
 happycorgi1 = Corgi.create(img_url: "http://i.imgur.com/tdavu17.gif", quote: "Walk tall!", emotion: happy)
+happycomment1 = Comment.create(text: "You are my inspiration!", commenter: 'Melissa', corgi: happycorgi1)
+
 happycorgi2 = Corgi.create(img_url: "http://i.imgur.com/18f7bdG.gif", quote: "Be ready for anything!", emotion: happy)
 
 sadcorgi1 = Corgi.create(img_url: "http://i.imgur.com/wKjdA9G.jpg", quote: "I was meant for so much more than this.", emotion: sad)

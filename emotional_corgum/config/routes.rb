@@ -2,7 +2,9 @@ Rails.application.routes.draw do
   root to: 'emotions#index'
 
   resources :emotions
-  resources :corgis
+  resources :corgis do
+    resources :comments
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
