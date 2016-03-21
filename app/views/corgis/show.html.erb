@@ -1,12 +1,19 @@
 <div class='corgi'>
-  <div class='picture'>
+  <div class='large'>
     <%= image_tag @corgi.img_url, alt: "Corgi wisdom: #{@corgi.quote}" %>
   </div>
   <div class='quote'>
     <%= @corgi.quote %>
   </div>
-  <div class='comments'>
-    This is where all the comments will go
+  <div>
+    <% @corgi.comments.each do |comment| %>
+    <div class='comments'>
+      <%= comment.text %>
+      -- <%= comment.commenter %>
+      (posted at: <%= comment.created_at %>)
+    </div>
+
+    <% end %>
     (Add a new comment)
   </div>
 </div>

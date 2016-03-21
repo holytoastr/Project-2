@@ -34,6 +34,10 @@ footer {
   width: 100%
 }
 
+.comments {
+  padding: 20px;
+}
+
 .contents {
   order: 2;
   flex: 5;
@@ -50,6 +54,12 @@ footer {
   text-align: center;
 }
 
+.large img {
+  max-height: 500px;
+  border: 1px solid black;
+  padding: 2px;
+}
+
 .logo {
   font-size: 80px;
 }
@@ -57,6 +67,8 @@ footer {
 .picture img {
   max-width: 50%;
   max-height: 350px;
+  border: 1px solid black;
+  padding: 2px;
 }
 
 .sidebar {
