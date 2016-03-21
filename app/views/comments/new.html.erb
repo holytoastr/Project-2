@@ -1,1 +1,24 @@
-New comment form goes here!
+<div class='picture form'>
+  <%= image_tag 'http://i.imgur.com/WvOXZ.png', alt: 'Comment Corgi'%>
+  <div>
+    Lawyer Dog: Attorney at Aww reminds you that all comments should be civil for this fine corgum.
+  </div>
+</div>
+
+<div class='form'>
+  <%= form_for [@corgi, @comment] do |f| %>
+    <div class='form-element'>
+      <div>
+        <%= f.label 'Comment' %>
+      </div>
+      <%= f.text_area :text, size: '75x10' %>
+    </div>
+
+    <div class='form-element'>
+      <div>
+        <%= f.label :commenter %>
+      </div>
+      <%= f.text_field :commenter %>
+    </div>
+  <% end %>
+</div>

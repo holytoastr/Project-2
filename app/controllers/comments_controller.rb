@@ -1,11 +1,14 @@
 class CommentsController < ApplicationController
   def new
-    @comment = Comment.new
+    @corgi = Corgi.find(params[:corgi_id])
+    @comment = @corgi.comments.new
+
   end
 
   def create
-    @comment = Comment.create!(comment_params)
-    redirect_to corgis_path(@comment.corgi_id)
+    @corgi = Corgi.find(params[:corgi_id])
+    @comment = @corgi.comments.create!(comment_params)
+    redirect_to corgi_path(@corgi)
   end
 
   private
