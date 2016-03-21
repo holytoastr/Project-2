@@ -39,14 +39,24 @@ footer {
   flex: 5;
 }
 
+.corgi {
+  padding: 20px;
+  text-align: center;
+}
+
 .emotion {
   font-family: 'Love Ya Like A Sister', cursive;
-  font-size: 50px;
+  font-size: 60px;
   text-align: center;
 }
 
 .logo {
   font-size: 80px;
+}
+
+.picture img{
+  max-width: 50%;
+  max-height: 350px;
 }
 
 .sidebar {

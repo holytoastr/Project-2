@@ -2,4 +2,18 @@
   <div class="emotion">
     <%= @emotion.emotion_name %>
   </div>
+
+  <% @emotion.corgis.each do |corgi| %>
+    <div class='corgi'>
+      <div class='picture'>
+        <%= image_tag corgi.img_url, alt: "A #{@emotion.emotion_name} corgi" %>
+      </div>
+      <div class='quote'>
+        <%= corgi.quote %>
+      </div>
+      <div class='comments'>
+        This is where the most recent comment will go
+      </div>
+    </div>
+  <% end %>
 </div>

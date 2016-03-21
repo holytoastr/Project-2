@@ -2,7 +2,7 @@
 <div>
   <% @emotions.each do |emotion| %>
   <div>
-    <%= link_to emotion.emotion_name, emotion_path(emotion) %> (# of corgis)
+    <%= link_to emotion.emotion_name, emotion_path(emotion) %> (<%= emotion.corgis.count%> corgis)
   </div>
   <% end %>
 </div>
