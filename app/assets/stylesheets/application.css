@@ -29,6 +29,25 @@ footer {
   font-size: 15px;
 }
 
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 0 8px 0;
+    text-decoration: none;
+}
+
+/* Change the link color on hover */
+li a:hover {
+    background-color: black;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .container {
   display: flex;
   width: 100%
