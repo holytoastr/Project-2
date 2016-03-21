@@ -11,7 +11,7 @@
       <div>
         <%= f.label 'Comment' %>
       </div>
-      <%= f.text_area :text, size: '75x10' %>
+      <%= f.text_area :text, :required => true, size: '75x10' %>
     </div>
 
     <div class='form-element'>
@@ -19,6 +19,10 @@
         <%= f.label :commenter %>
       </div>
       <%= f.text_field :commenter %>
+    </div>
+
+    <div class='form-element'>
+      <%= f.submit %>
     </div>
   <% end %>
 </div>

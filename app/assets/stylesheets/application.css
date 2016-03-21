@@ -59,6 +59,10 @@ footer {
   padding: 20px;
 }
 
+.form-element {
+  padding: 10px;
+}
+
 .large img {
   max-height: 500px;
   border: 1px solid black;
