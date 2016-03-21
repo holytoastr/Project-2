@@ -29,6 +29,10 @@ footer {
   font-size: 15px;
 }
 
+img {
+  border-radius: 3%;
+}
+
 li a {
     display: block;
     color: #000;
@@ -80,6 +84,11 @@ ul {
 
 .form-element {
   padding: 10px;
+}
+
+.home {
+  float:left;
+  padding: 30px;
 }
 
 .large img {
