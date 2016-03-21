@@ -12,7 +12,7 @@
         <%= corgi.quote %>
       </div>
       <div class='comments'>
-        This is where the most recent comment will go
+        <%= corgi.comments.last.try :text %>
         <%= link_to "(Read more comments)", corgi_path(corgi) %>
       </div>
     </div>
