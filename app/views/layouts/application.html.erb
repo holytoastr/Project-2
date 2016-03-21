@@ -21,6 +21,11 @@
 
     <div class='sidebar'>
       <%= link_to 'Home', emotions_path %>
+
+      <% @emotions.each do |emotion| %>
+      <div><%= link_to emotion.emotion_name, emotion_path(emotion) %></div>
+
+      <% end %>
     </div>
   </div>
 
