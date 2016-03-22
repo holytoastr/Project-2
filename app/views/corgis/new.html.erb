@@ -1,0 +1,21 @@
+<div class='form'>
+  <%= form_for [@emotion, @corgi] do |f| %>
+    <div class='form-element'>
+      <div>
+        <%= f.label 'Image URL' %>
+      </div>
+      <%= f.text_field :img_url, :required => true %>
+    </div>
+
+    <div class='form-element'>
+      <div>
+        <%= f.label :quote %>
+      </div>
+      <%= f.text_field :quote %>
+    </div>
+
+    <div class='form-element'>
+      <%= f.submit %>
+    </div>
+  <% end %>
+</div>
