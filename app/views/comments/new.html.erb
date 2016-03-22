@@ -1,8 +1,5 @@
 <div class='picture form'>
-  <%= image_tag 'http://i.imgur.com/WvOXZ.png', alt: 'Comment Corgi'%>
-  <div>
-    Lawyer Dog: Attorney at Aww reminds you that all comments should be civil for this fine corgum.
-  </div>
+  <%= image_tag @corgi.img_url, alt: 'Comment Corgi'%>
 </div>
 
 <div class='form'>
@@ -25,4 +22,10 @@
       <%= f.submit %>
     </div>
   <% end %>
+</div>
+<div class='picture form'>
+  <%= image_tag 'http://i.imgur.com/WvOXZ.png', alt: 'Lawyer Dog'%>
+  <div>
+    Lawyer Dog: Attorney at Aww reminds you that all comments should be civil for this fine corgum.
+  </div>
 </div>

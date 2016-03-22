@@ -14,6 +14,7 @@ sad = Emotion.create(emotion_name: 'Sad')
 angry = Emotion.create(emotion_name: 'Angry')
 romantic = Emotion.create(emotion_name: 'Romantic')
 scared = Emotion.create(emotion_name: 'Scared')
+relaxed = Emotion.create(emotion_name: 'Relaxed')
 
 happycorgi1 = Corgi.create(img_url: "http://i.imgur.com/tdavu17.gif", quote: "Walk tall!", emotion: happy)
 happycomment1 = Comment.create(text: "You are my inspiration!", commenter: 'Melissa', corgi: happycorgi1)
@@ -34,9 +35,13 @@ sadcorgi3 = Corgi.create(img_url: 'http://i.imgur.com/Ehawcgl.jpg', quote: 'No o
 
 angrycorgi1 = Corgi.create(img_url: "http://i.imgur.com/JEAmgJX.jpg", quote: "This is NOT the dog park", emotion: angry)
 angrycorgi2 = Corgi.create(img_url: "http://i.imgur.com/RAFH7bf.gif", quote: "Cabbages!!!", emotion: angry)
-angrycorgi3 = Corgi.create(img_url: 'http://i.imgur.com/S4yBFsk.jpg', quote: 'Express a surprise in your shoes tomorrow.', emotion: angry)
+angrycorgi3 = Corgi.create(img_url: 'http://i.imgur.com/S4yBFsk.jpg', quote: 'Expect a surprise in your shoes tomorrow.', emotion: angry)
 
 romanticcorgi1 = Corgi.create(img_url: 'http://i.imgur.com/4QjPER9.jpg', quote: 'Show love at every chance you get', emotion: romantic)
 romanticcorgi2 = Corgi.create(img_url: 'http://i.imgur.com/sRPyiLA.jpg', quote: "Hey ladies", emotion: romantic)
 
 scaredcorgi1 = Corgi.create(img_url: 'http://i.imgur.com/NxOcIiI.jpg', quote: 'AAHHHH! What is that!?!?', emotion: scared)
+scaredcorgi2 = Corgi.create(img_url: 'http://i.imgur.com/BQxoWh7.jpg', quote: 'No bath! No bath!', emotion: scared)
+
+relaxedcorgi1 = Corgi.create(img_url: 'http://i.imgur.com/DltDqta.jpg', quote: "Maximum nap time", emotion: relaxed)
+relaxedcorgi2 = Corgi.create(img_url: 'http://i.imgur.com/3PitT.jpg', quote: 'To relax at the beach, you must become one with the beach', emotion: relaxed)
