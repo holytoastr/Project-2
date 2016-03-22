@@ -2,7 +2,6 @@ class CommentsController < ApplicationController
   def new
     @corgi = Corgi.find(params[:corgi_id])
     @comment = @corgi.comments.new
-
   end
 
   def create
