@@ -23,7 +23,9 @@
       <ul>
         <li>
           <%= link_to 'Home', emotions_path %>
+        </li>
           <% @emotions.each do |emotion| %>
+          <li>
             <%= link_to emotion.emotion_name, emotion_path(emotion) %>
           <% end %>
         </li>

@@ -5,6 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Emotion.destroy_all
+Corgi.destroy_all
+Comment.destroy_all
 
 happy = Emotion.create(emotion_name: 'Happy')
 sad = Emotion.create(emotion_name: 'Sad')
