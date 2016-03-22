@@ -2,16 +2,18 @@
   <div class='large'>
     <%= image_tag @corgi.img_url, alt: "Corgi wisdom: #{@corgi.quote}" %>
   </div>
-  <div class='quote'>
+  <p class='quote'>
     <%= @corgi.quote %>
-  </div>
+  </p>
   <div>
     <% @corgi.comments.each do |comment| %>
-    <div class='comments'>
+    <p class='comments'>
       <%= comment.text %>
-      -- <%= comment.commenter %>
-      (posted at: <%= comment.created_at %>)
-    </div>
+      <p class='commenters'>
+        -- <%= comment.commenter %>
+          (posted at: <%= comment.created_at %>)
+      </p>
+    </p>
 
     <% end %>
     <%= link_to '(Add a new comment)', new_corgi_comment_path(@corgi) %>

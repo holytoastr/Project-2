@@ -11,10 +11,10 @@
       <div class='quote'>
         <%= corgi.quote %>
       </div>
-      <div class='comments'>
+      <p class='comments'>
         <%= corgi.comments.last.try :text %>
         <%= link_to "(Read more comments)", corgi_path(corgi) %>
-      </div>
+      </p>
     </div>
   <% end %>
 </div>

@@ -1,13 +1,13 @@
-
-<div class='home large'>
-  <%= image_tag'maggie.png', alt: 'Maggie' %>
-</div>
-
-<div class='home'>
-  <h2>Choose your corgum:</h2>
-  <% @emotions.each do |emotion| %>
-  <div>
-    <%= link_to emotion.emotion_name, emotion_path(emotion) %> (<%= emotion.corgis.count%> corgis)
+<div>
+  <div class='home large'>
+    <%= image_tag'maggie.png', alt: 'Maggie' %>
   </div>
-  <% end %>
+
+    <h2>Choose your corgum:</h2>
+    <% @emotions.each do |emotion| %>
+    <div class='home'>
+      <%= emotion.corgis.count%> corgis are <%= link_to emotion.emotion_name, emotion_path(emotion) %>
+    </div>
+    <% end %>
+
 </div>

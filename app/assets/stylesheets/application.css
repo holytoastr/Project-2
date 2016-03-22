@@ -57,6 +57,10 @@ ul {
   width: 100%
 }
 
+.commenters {
+  margin-top: -40px;
+}
+
 .comments {
   padding: 20px;
 }
@@ -89,6 +93,7 @@ ul {
 .home {
   float:left;
   padding: 30px;
+  position: relative;
 }
 
 .large img {
