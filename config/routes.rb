@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   root to: 'emotions#index'
 
-  resources :emotions
+  resources :emotions do
+    resources :corgis
+  end
+  
   resources :corgis do
     resources :comments
   end
