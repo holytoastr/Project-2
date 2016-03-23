@@ -21,7 +21,7 @@ class CorgisController < ApplicationController
     else
       flash[:alert] = "You are not permitted to delete this item"
     end
-    redirect_to :root
+    redirect_to :back
   end
 
   private
