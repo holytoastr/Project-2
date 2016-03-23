@@ -133,6 +133,12 @@ ul {
   padding-bottom: 20px;
 }
 
+.notice, .alert {
+  color: red;
+  text-align: center;
+  font-size: 30px;
+}
+
 .picture img {
   max-width: 50%;
   max-height: 350px;

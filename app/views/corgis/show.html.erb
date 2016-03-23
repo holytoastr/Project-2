@@ -17,5 +17,6 @@
 
     <% end %>
     <%= link_to '(Add a new comment)', new_corgi_comment_path(@corgi) %>
+    <%= link_to '(Remove corgi)', corgi_path(@corgi), method: :delete %>
   </div>
 </div>
