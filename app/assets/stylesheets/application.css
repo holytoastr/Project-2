@@ -129,6 +129,10 @@ ul {
   font-size: 80px;
 }
 
+.navigation {
+  padding-bottom: 20px;
+}
+
 .picture img {
   max-width: 50%;
   max-height: 350px;
