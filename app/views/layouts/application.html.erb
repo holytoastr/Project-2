@@ -40,8 +40,10 @@
           </ul>
       </div>
       <div class='navigation'>
-        Choose:
+
         <ul>
+          <li> Choose:
+          </li>
           <% @emotions.each do |emotion| %>
           <li>
             <%= link_to emotion.emotion_name, emotion_path(emotion) %>
@@ -54,7 +56,7 @@
   </div>
 
   <footer>
-    Made by Melissa Miller
+    Made by Melissa Miller. All pictures belong to their copywrite holders.
   </footer>
 
 </body>

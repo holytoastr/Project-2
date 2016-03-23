@@ -13,6 +13,15 @@
  *= require_tree .
  *= require_self
  */
+
+ a {
+   text-decoration: none;
+   color: rgb(208, 81, 0);
+ }
+
+ a:hover {
+   color: black;
+ }
 body {
   font-family: 'Bubblegum Sans', cursive;
   font-size: 20px;
@@ -31,6 +40,10 @@ footer {
 
 img {
   border-radius: 3%;
+}
+
+li {
+  font-size: 30px;
 }
 
 li a {
@@ -59,6 +72,22 @@ ul {
 .alert, .notice {
   text-align: center;
   font-size: 30px;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  border: 0;
+  width: 175px;
+  height: 45px;
+  font-size: 20px;
+  border-radius: 5px;
+  font-weight: 200;
+  font-family: 'Love Ya Like A Sister', cursive;
+}
+
+.button:hover {
+  background-color: rgb(208, 81, 0);
 }
 
 .container {
@@ -101,9 +130,7 @@ ul {
 }
 
 .create-corgi a:hover, .create-corgi a:focus {
-    background: white;
-    border: solid 1px black;
-    color: black;
+    background: rgb(208, 81, 0);
     text-decoration: none;
 }
 
@@ -120,6 +147,7 @@ ul {
 
 .form-element {
   padding: 10px;
+  font-family: 'Love Ya Like A Sister', cursive;
 }
 
 .home {
@@ -143,16 +171,28 @@ ul {
 }
 
 .picture img {
-  max-width: 50%;
-  max-height: 350px;
+  width: 500px;
   border: 1px solid black;
   padding: 2px;
+}
+
+.quote {
+  font-size: 30px;
+  padding-top: 5px;
 }
 
 .sidebar {
   order: 1;
   flex: 1;
   margin-left: 10px;
+}
+
+.splash {
+  width: 80%;
+  float: right;
+  margin-top: -10%;
+  z-index: -1000;
+  position: absolute;
 }
 
 .tagline {
