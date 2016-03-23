@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
 
   def create
     @corgi = Corgi.find(params[:corgi_id])
-    @comment = @corgi.comments.create!(comment_params)
+    @comment = @corgi.comments.create!(comment_params.merge(user: current_user))
     redirect_to corgi_path(@corgi)
   end
 

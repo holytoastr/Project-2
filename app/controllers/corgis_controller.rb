@@ -10,7 +10,7 @@ class CorgisController < ApplicationController
 
   def create
     @emotion = Emotion.find(params[:emotion_id])
-    @corgi = @emotion.corgis.create!(corgi_params)
+    @corgi = @emotion.corgis.create!(corgi_params.merge(user:current_user))
     redirect_to corgi_path(@corgi)
   end
 

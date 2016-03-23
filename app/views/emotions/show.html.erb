@@ -1,10 +1,11 @@
 <div class="emotion">
   <%= @emotion.emotion_name %>
 </div>
-
+<% if current_user %>
 <div class='create-corgi'>
   <%= link_to '(Add a corgi to the corgum)', new_emotion_corgi_path(@emotion) %>
 </div>
+<% end %>
 
 <% @emotion.corgis.each do |corgi| %>
   <div class='corgi'>
