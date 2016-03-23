@@ -10,6 +10,17 @@ class CommentsController < ApplicationController
     redirect_to corgi_path(@corgi)
   end
 
+  def destroy
+    @corgi = Corgi.find(params[:corgi_id])
+    @comment = Comment.find(params[:id])
+    if @comment.user == current_user
+      @comment.destroy
+    else
+      flash[:alert] = "You are not permitted to delete this item"
+    end
+    redirect_to :back
+  end
+
   private
   def comment_params
     params.require(:comment).permit(:text, :commenter)

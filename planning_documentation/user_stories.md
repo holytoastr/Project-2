@@ -9,14 +9,13 @@
 
 **Main Page**
 * A user should be able to click on an emotion to see images of corgis (Bronze level)
-* A user should be able to click on more than one emotion to see images of corgis (Gold level)
+* A user should be able to click on more than one emotion to see images of corgis ({Platinum} level)
 
 **Show Page - Individual Emotions**
 * A user should be able to see images of corgis and a caption for each corgi (Bronze level)
 * A user should be able to read most recent comment (Bronze level)
 * A user should be able to click through to read all comments (Bronze level)
 * A user should be able to submit a new corgi image (Silver level)
-* A logged in user should be able to edit corgi pictures (Gold level)
 * A logged in user should be able to delete corgi pictures (Gold level)
 
 **Show Page - Individual Corgis**

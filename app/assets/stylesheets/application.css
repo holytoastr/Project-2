@@ -52,6 +52,15 @@ ul {
     padding: 0;
 }
 
+.alert {
+  color: red;
+}
+
+.alert, .notice {
+  text-align: center;
+  font-size: 30px;
+}
+
 .container {
   display: flex;
   width: 100%
@@ -131,12 +140,6 @@ ul {
 
 .navigation {
   padding-bottom: 20px;
-}
-
-.notice, .alert {
-  color: red;
-  text-align: center;
-  font-size: 30px;
 }
 
 .picture img {

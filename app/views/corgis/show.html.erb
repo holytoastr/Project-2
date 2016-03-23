@@ -12,6 +12,7 @@
       <p class='commenters'>
         -- <%= comment.commenter %>
           (posted at: <%= comment.created_at %>)
+          <span><%=link_to '(delete)', corgi_comment_path(@corgi, comment), method: :delete%></span>
       </p>
     </p>
 
