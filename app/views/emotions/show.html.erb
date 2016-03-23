@@ -5,6 +5,10 @@
 <div class='create-corgi'>
   <%= link_to '(Add a corgi to the corgum)', new_emotion_corgi_path(@emotion) %>
 </div>
+<% else %>
+<div class='create-corgi'>
+  <%= link_to '(Sign in to add more corgis)', new_user_session_path %>
+</div>
 <% end %>
 
 <% @emotion.corgis.each do |corgi| %>

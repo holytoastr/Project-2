@@ -13,6 +13,11 @@ class CommentsController < ApplicationController
   def edit
     @corgi = Corgi.find(params[:corgi_id])
     @comment = Comment.find(params[:id])
+    if @comment.user != current_user
+      flash[:alert] = "You are not permitted to edit this item"
+      redirect_to :back
+    end
+
   end
 
   def update
