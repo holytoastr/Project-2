@@ -1,0 +1,31 @@
+<div class='picture form'>
+  <%= image_tag @corgi.img_url, alt: 'Comment Corgi'%>
+</div>
+
+<div class='form'>
+  <%= form_for [@corgi, @comment] do |f| %>
+    <div class='form-element'>
+      <div>
+        <%= f.label 'Comment' %>
+      </div>
+      <%= f.text_area :text, :required => true, size: '75x10' %>
+    </div>
+
+    <div class='form-element'>
+      <div>
+        <%= f.label :commenter %>
+      </div>
+      <%= f.text_field :commenter %>
+    </div>
+
+    <div class='form-element'>
+      <%= f.submit %>
+    </div>
+  <% end %>
+</div>
+<div class='picture form'>
+  <%= image_tag 'http://i.imgur.com/WvOXZ.png', alt: 'Lawyer Dog'%>
+  <div>
+    Lawyer Dog: Attorney at Aww reminds you that all comments should be civil for this fine corgum.
+  </div>
+</div>

@@ -10,6 +10,18 @@ class CommentsController < ApplicationController
     redirect_to corgi_path(@corgi)
   end
 
+  def edit
+    @corgi = Corgi.find(params[:corgi_id])
+    @comment = Comment.find(params[:id])
+  end
+
+  def update
+    @corgi = Corgi.find(params[:corgi_id])
+    @comment = Comment.find(params[:id])
+    @comment.update(comment_params.merge(user: current_user))
+    redirect_to corgi_path(@corgi)
+  end
+
   def destroy
     @corgi = Corgi.find(params[:corgi_id])
     @comment = Comment.find(params[:id])
