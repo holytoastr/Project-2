@@ -2,13 +2,16 @@
 A gathering of corgi feelings
 
 ## Tech Used
-This is a ruby on rails app with a postgres database.
++ Ruby on Rails
++ HTML and CSS
++ Postgres database
++ Devise for users and authentication
 
 ## Approach Taken
-
-## Installation Instructions
+For this rails project, I approached it by working on a single model at a time. Once that model was completely built out and all errors had been eliminated, I added the next model. In this way, I could follow an error driven development path. Each error guided me to the next step in developing the app.
 
 ## Unsolved Problems
++ Allowing a user to select more than one emotion at a time
 
 ## Goals
 
@@ -22,8 +25,8 @@ This is a ruby on rails app with a postgres database.
 
 **Gold**
 + Further advanced styling
-- User login
-- Allow logged in users to edit/delete corgis and comments
++ User login
++ Allow logged in users to edit/delete corgis and comments
 
 **Platinum**
 - User can choose multiple emotions

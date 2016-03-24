@@ -12,12 +12,16 @@
       <p class='commenters'>
         -- <%= comment.commenter %>
           (posted at: <%= comment.created_at %>)
+          <% if current_user %>
           <span><%= link_to '(edit)', edit_corgi_comment_path(@corgi, comment) %> <%=link_to '(delete)', corgi_comment_path(@corgi, comment), method: :delete%></span>
+          <% end %>
       </p>
     </p>
 
     <% end %>
+    <% if current_user %>
     <%= link_to '(Add a new comment)', new_corgi_comment_path(@corgi) %>
     <%= link_to '(Remove corgi)', corgi_path(@corgi), method: :delete %>
+    <% end %>
   </div>
 </div>
