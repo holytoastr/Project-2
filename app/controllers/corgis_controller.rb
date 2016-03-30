@@ -16,6 +16,7 @@ class CorgisController < ApplicationController
 
   def destroy
     @corgi = Corgi.find(params[:id])
+    # NHO: a good gem to look into is CanCanCan for authorization purposes
     if @corgi.user == current_user
       @corgi.destroy
     else
