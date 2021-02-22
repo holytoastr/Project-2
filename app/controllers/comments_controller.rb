@@ -1,4 +1,6 @@
 class CommentsController < ApplicationController
+  # NHO: not something we covered, but you can use before_action's on a controller to run a method for any action
+  # A good use case may be to make a method that abstracts where you find a Corgi for each action
   def new
     @corgi = Corgi.find(params[:corgi_id])
     @comment = @corgi.comments.new

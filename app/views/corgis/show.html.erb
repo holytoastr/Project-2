@@ -11,7 +11,7 @@
       <%= comment.text %>
       <p class='commenters'>
         -- <%= comment.commenter %>
-          (posted at: <%= comment.created_at %>)
+          (posted at: <%= comment.created_at %>)   <!-- NHO: would recommend looking into Rails' native helper: `time_ago_in_words`  -->
           <% if current_user %>
           <span><%= link_to '(edit)', edit_corgi_comment_path(@corgi, comment) %> <%=link_to '(delete)', corgi_comment_path(@corgi, comment), method: :delete%></span>
           <% end %>

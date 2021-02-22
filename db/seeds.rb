@@ -5,6 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+# NHO: a good rule of thumb is destroy all of records of the child models first. I.e. Comments
+# To prevent a comment existing without a corgi it is attached to
 Emotion.destroy_all
 Corgi.destroy_all
 Comment.destroy_all
